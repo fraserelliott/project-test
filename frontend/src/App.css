@@ -1,0 +1,130 @@
+h1 {
+  font-family: var(--font-family-primary);
+  font-size: 1.3rem;
+}
+
+button {
+  background-color: var(--btn-primary);
+  color: inherit;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: background-color 150ms ease, transform 75ms ease;
+  padding: 0.25rem;
+}
+
+button:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+button:active {
+  background-color: var(--btn-primary-active);
+  transform: scale(0.97);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+  background-color: var(--btn-danger);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-l {
+  width: min(691px, 90vw);
+}
+
+.mx-1 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.my-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.my-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.p-1 {
+  padding: 5px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.w-m {
+  width: min(450px, 90vw);
+}
+
+form > * {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  background-color: var(--btn-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  border: var(--glass-border);
+  padding: 0.1rem;
+}
+
+textarea {
+  background-color: var(--btn-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  border: var(--glass-border);
+  resize: none;
+  padding: 0.1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.horizontal-spacing > * {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.vertical-spacing > * {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* responsive behaviours */
+
+@media (max-width: 768px) {
+  .flex-row-desktop {
+    flex-direction: column;
+  }
+}

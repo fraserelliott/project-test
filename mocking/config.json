@@ -1,0 +1,63 @@
+{
+  "middleware": {
+    "auth_token": {
+      "accepted_token": "fraser123"
+    },
+    "input_check": {},
+    "permissions_token": {
+      "accepted_tokens": {
+        "user": "user123"
+      }
+    }
+  },
+  "routes": [
+    {
+      "method": "GET",
+      "endpoint": "/api/users/{id}",
+      "data_set": "users",
+      "middleware": [],
+      "metadata": {
+        "singular_response": true
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/users",
+      "data_set": "users",
+      "middleware": [],
+      "metadata": {}
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/users/{id}",
+      "data_set": "users",
+      "middleware": [
+        "auth_token"
+      ],
+      "metadata": {
+        "singular_response": true
+      }
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/users",
+      "data_set": "users",
+      "middleware": [],
+      "metadata": {}
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/posts",
+      "data_set": "posts",
+      "middleware": [],
+      "metadata": {}
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/comments",
+      "data_set": "comments",
+      "middleware": [],
+      "metadata": {}
+    }
+  ]
+}
