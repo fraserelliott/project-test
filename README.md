@@ -13,8 +13,8 @@ There are pre-made scripts to ensure the correct servers run and URLs are set fo
 Please do **not** change these; if anything isn't working or you're unsure, ask Fraser.
 
 **For Frontend:**
-1. Use `npm run dev:mock` while the backend is still in development.
-2. Use `npm run dev:backend` once you get the go-ahead.
+1. Use `npm run dev-mock` while the backend is still in development.
+2. Use `npm run dev-backend` once you get the go-ahead.
 
 **For Backend:**
 - Use `npm run dev`
